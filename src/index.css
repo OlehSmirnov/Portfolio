@@ -1,4 +1,14 @@
 * {
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+}
+
+h1, h2 {
+    font-size: 1.8rem;
 }

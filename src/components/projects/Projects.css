@@ -1,0 +1,21 @@
+.projects-section {
+    background-color: #4aa999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.projects-container {
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #ff9167;
+}
+
+.projects-container img {
+    width: 100%;
+}
