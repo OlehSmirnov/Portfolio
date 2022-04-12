@@ -9,6 +9,10 @@ body {
     color: white;
 }
 
-h1, h2 {
+.smaller-font {
+    font-size: 1.5rem;
+}
+
+.bigger-font {
     font-size: 1.8rem;
 }

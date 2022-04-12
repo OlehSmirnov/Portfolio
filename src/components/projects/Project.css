@@ -1,0 +1,14 @@
+.project {
+    background-color: #d4edda;
+    padding: 15px;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.icon {
+    height: 50px;
+}
+
+.preview-image {
+    width: 100%;
+}
