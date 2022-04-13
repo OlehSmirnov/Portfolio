@@ -21,7 +21,7 @@ function Project({projectImage, projectName, repoUrl, liveUrl, repoPath, repoBra
     }
 
     fetchData();
-  }, [])
+  }, [repoPath, repoBranch])
 
   function showReadme() {
     textContainerRef.current.style.display = "block";
