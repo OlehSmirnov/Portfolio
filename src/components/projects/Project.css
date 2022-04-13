@@ -3,12 +3,46 @@
     padding: 15px;
     animation: fadeIn;
     animation-duration: 1s;
+    box-shadow: 3px 8px 15px rgb(90, 91, 90);
+    overflow: hidden;
+}
+
+.project:hover {
+    box-shadow: 3px 8px 15px #2b3a2e;
 }
 
 .icon {
-    height: 50px;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    cursor: pointer;
 }
 
 .preview-image {
     width: 100%;
+}
+
+.button-close {
+    top: -20px;
+    right: -5px;
+    position: absolute;
+}
+
+.readme-container {
+    position: relative;
+    display: none;
+}
+
+.readme-text {
+    color: black;
+    text-align: left;
+}
+
+.readme-text h1, p {
+    margin-top: 10px;
+}
+
+.read-more-text {
+    color: #546ade;
+    cursor: pointer;
 }

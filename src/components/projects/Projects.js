@@ -15,20 +15,21 @@ function Projects() {
       await fetchNetlifyData("sites").then(res => setResponseNetlify(res));
       setLoading(false);
     }
+
     setData()
   }, [])
 
   function getSites() {
-    return responseNetlify.map((site, index) => {
+    return responseNetlify.map(site => {
       const buildSettings = site.build_settings;
       return <Project
-        key={index}
-        id={index}
+        key={site.name}
+        liveUrl={site.default_domain}
         repoPath={buildSettings.repo_path}
         repoBranch={buildSettings.repo_branch}
         repoUrl={buildSettings.repo_url}
-        image={site.screenshot_url}
-        name={site.name}/>
+        projectImage={site.screenshot_url}
+        projectName={site.name}/>
     })
   }
 

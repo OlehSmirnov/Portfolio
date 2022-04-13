@@ -10,7 +10,7 @@ async function fetchNetlifyData(url) {
     });
     return await res.json();
   } catch (err) {
-    console.log("Error fetching data: " + err);
+    console.error("Error fetching data: " + err);
   }
 }
 

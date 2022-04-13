@@ -10,15 +10,14 @@
 .projects-container {
     padding: 30px;
     display: grid;
-    align-items: center;
     justify-content: center;
     width: 100%;
-    color: #ff9167;
+    color: black;
     text-align: center;
     grid-gap: 20px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
