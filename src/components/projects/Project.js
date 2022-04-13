@@ -34,6 +34,8 @@ function Project({projectImage, projectName, repoUrl, liveUrl, repoPath, repoBra
     textContainerRef.current.style.display = "none";
   }
 
+  console.log(liveUrl)
+
   return (
     <div className="project">
       <div ref={textContainerRef} className="readme-container animate__animated animate__fadeInUp">

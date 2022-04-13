@@ -24,7 +24,7 @@ function Projects() {
       const buildSettings = site.build_settings;
       return <Project
         key={site.name}
-        liveUrl={site.default_domain}
+        liveUrl={`https://${site.default_domain}`}
         repoPath={buildSettings.repo_path}
         repoBranch={buildSettings.repo_branch}
         repoUrl={buildSettings.repo_url}
