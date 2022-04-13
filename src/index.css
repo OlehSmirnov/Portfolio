@@ -6,7 +6,7 @@
 
 body {
     background-color: #222222;
-    color: white;
+    color: #fff;
 }
 
 .smaller-font {
@@ -15,4 +15,11 @@ body {
 
 .bigger-font {
     font-size: 1.8rem;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    cursor: pointer;
 }

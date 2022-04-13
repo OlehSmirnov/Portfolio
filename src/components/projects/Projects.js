@@ -35,7 +35,7 @@ function Projects() {
 
   return (
     <section className="projects-section">
-      <h1>My projects</h1>
+      <h1 className="bigger-font">My projects</h1>
       {loading && <LoadingSpin/>}
       <div className="projects-container">
         {responseNetlify !== null && getSites()}

@@ -20,20 +20,13 @@ function Project({projectImage, projectName, repoUrl, liveUrl, repoPath, repoBra
       setReadmeHtml(new MarkdownIt().render(mdRaw));
     }
 
-    fetchData()
+    fetchData();
   }, [])
 
   function showReadme() {
     textContainerRef.current.style.display = "block";
-    //const el = "<span class='read-more-text'> Read more...</span>";
-    if (readmeHtml.length > 750) {
-      textRef.current.innerHTML = readmeHtml.substring(0, 750);
-    } else textRef.current.innerHTML = readmeHtml;
+    textRef.current.innerHTML = readmeHtml;
     setIsReadmeVisible(true);
-  }
-
-  function showMoreReadme() {
-    textRef.current.innerHTML = readmeHtml + "<span className='read-more-text' onClick={showReadme}> Read less...</span>";
   }
 
   function hideReadme() {

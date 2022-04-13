@@ -1,21 +1,15 @@
 .project {
-    background-color: #d4edda;
+    background-color: #dcdcdc;
     padding: 15px;
     animation: fadeIn;
     animation-duration: 1s;
     box-shadow: 3px 8px 15px rgb(90, 91, 90);
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .project:hover {
     box-shadow: 3px 8px 15px #2b3a2e;
-}
-
-.icon {
-    height: 40px;
-    width: 40px;
-    margin: 5px;
-    cursor: pointer;
 }
 
 .preview-image {
