@@ -4,8 +4,7 @@
 
 My portfolio app.
 
-After opening the app a navbar is firstly shown to user.
-At that time in the background the app sends some requests to GitHub and Netlify APIs to get necessary data about projects.
+After opening the app it sends some requests to GitHub and Netlify APIs to get necessary data about my projects.
 After all necessary data is gathered a user can see all of my projects that are deployed to Netlify.
 There are 4 buttons on each project card:
 * GitHub repo - redirects to corresponding GitHub repository of a project
@@ -18,7 +17,7 @@ all the necessary changes will be reflected in the app and no additional coding 
 
 **Technical difficulties:**
 
-* Set up proper API integrations and gather data dynamically
+* Set up proper API integrations and gather/display data dynamically
 * Figure out how to get and parse the correct GitHub readme file
 
 [Live version](https://oleh-smirnov-portfolio.netlify.app/)
