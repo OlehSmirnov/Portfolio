@@ -28,7 +28,6 @@ function Projects() {
         repoPath={buildSettings.repo_path}
         repoBranch={buildSettings.repo_branch}
         repoUrl={buildSettings.repo_url}
-        projectImage={site.screenshot_url}
         projectName={site.name}/>
     })
   }
