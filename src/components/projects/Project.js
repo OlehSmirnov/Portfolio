@@ -3,10 +3,11 @@ import github_icon from "../../assets/github-square-brands.svg";
 import heart_icon from "../../assets/heart-pulse-solid.svg";
 import comment_icon from "../../assets/comment-solid.svg";
 import close_icon from "../../assets/xmark-solid.svg";
+
 import {useEffect, useRef, useState} from "react";
 import MarkdownIt from "markdown-it";
 
-function Project({projectImage, projectName, repoUrl, liveUrl, repoPath, repoBranch}) {
+function Project({projectName, repoUrl, liveUrl, repoPath, repoBranch}) {
 
   const [readmeHtml, setReadmeHtml] = useState("");
   const [isReadmeVisible, setIsReadmeVisible] = useState(false);
@@ -45,7 +46,10 @@ function Project({projectImage, projectName, repoUrl, liveUrl, repoPath, repoBra
         <div className="animate__fadeInDown animate__animated">
           <h1 className="smaller-font">{projectName}</h1>
           <a href={liveUrl}>
-            <img className="preview-image" src={projectImage} alt="Live version" title="Live version"/>
+            <img className="preview-image"
+                 src={process.env.PUBLIC_URL + `/site_previews/${projectName}.png`}
+                 alt="Live version"
+                 title="Live version"/>
           </a>
           <a href={repoUrl}>
             <img className="icon" src={github_icon} title="Github repository" alt="Github repository"/>
