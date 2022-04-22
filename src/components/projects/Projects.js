@@ -15,7 +15,6 @@ function Projects() {
       await fetchNetlifyData("sites").then(res => setResponseNetlify(res));
       setLoading(false);
     }
-
     setData()
   }, [])
 
