@@ -1,9 +1,8 @@
-export const NETLIFY_API_TOKEN = "k-2-6jdrn1DiH_AMvQxB9rVgKscQfGuh88PeCrICg94";
-export const NETLIFY_API_CALL = "https://api.netlify.com/api/v1/";
+import {NETLIFY_API_TOKEN} from "../APIKeys";
 
 async function fetchNetlifyData(url) {
   try {
-    const res = await fetch(NETLIFY_API_CALL + url, {
+    const res = await fetch("https://api.netlify.com/api/v1/" + url, {
       headers: {
         "Authorization": "Bearer " + NETLIFY_API_TOKEN
       }
