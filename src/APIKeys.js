@@ -1,0 +1,1 @@
+export const NETLIFY_API_TOKEN = "k-2-6jdrn1DiH_AMvQxB9rVgKscQfGuh88PeCrICg94"
